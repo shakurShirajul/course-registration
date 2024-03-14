@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background: #F3F3F3; */
+}
+.primary-btn{
+  @apply text-white text-lg font-semibold bg-[#2F80ED] py-2 w-full rounded-lg
+}
