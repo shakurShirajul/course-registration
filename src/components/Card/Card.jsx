@@ -2,7 +2,7 @@ import { FiDollarSign } from "react-icons/fi";
 import { GoBook } from "react-icons/go";
 
 
-const Card = ({ card }) => {
+const Card = ({ card, handleCreditPrice }) => {
     // console.log(card);
     const { name, description, photo, price, credit } = card;
     return (
@@ -26,7 +26,9 @@ const Card = ({ card }) => {
                     </div>
                 </div>
                 <div>
-                    <button className="primary-btn">Select</button>
+                    <button className="primary-btn" onClick={()=> handleCreditPrice(card)}>
+                        Select
+                    </button>
                 </div>
             </div>
         </div>
